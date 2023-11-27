@@ -42,7 +42,7 @@ def is_date(date: str, fuzzy=False) -> bool:
     True
     """
     try:
-        parse(date, fuzzy=fuzzy)
+        parse(str(date), fuzzy=fuzzy)
         return True
     except ValueError:
         return False
