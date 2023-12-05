@@ -22,7 +22,6 @@
               <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav mr-auto">
                   <a class="nav-item nav-link" href="/">Home</a>
-                  <a class="nav-item nav-link" href="/about">About</a>
                 </div>
               </div>
             </div>
@@ -31,28 +30,41 @@
           <main role="main" class="container">
           <div class="row">
             <div class="col-md-8">
-                <h1>Price History</h1>
+                <h1>Price History - {{ user_input }} </h1>
                 <form method ="post">
                     {% csrf_token %}
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <label for="select1">Product</label>
+                                <select id="select1" class="form-select" name="product_name">
+                                    <option value="Brent">Brent</option>
+                                    <option value="WTI">WTI</option>
+                                    <option value="Propane">Propane</option>
+                                    <option value="Gasoline">Gasoline</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Heating Oil">Heating Oil</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                     Start(YYYY-MM-DD): <input type="text" name="starting_date">
                     End(YYYY-MM-DD): <input type="text" name="ending_date">
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                 </form>
                 {{ graph|safe }}
             </div>
             <div class="col-md-4">
               <div class="content-section">
-                <h3>Our Sidebar</h3>
-                <p class='text-muted'>
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-light">Latest News</li>
+                <h3>Latest News</h3>
+                    <p class='text-muted'>
                         {% for post in posts %}
                             <article class="media copythonntent-section">
                                 <div class="media-body">
                                     <div class="article-metadata">
                                         <small class="text-muted">{{ post.date }}</small>
                                     </div>
-                                    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+                                    <h5><a class="article-title">{{ post.title }}</a></h5>
                                     <p class="article-content">{{ post.content }}</p>
                                 </div>
                             </article>
