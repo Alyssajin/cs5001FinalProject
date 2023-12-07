@@ -56,8 +56,8 @@ How do we run your project? What should we do to see it in action? - Note this i
 ```python
 python manage.py runserver
 ```
-2. Click on "http://127.0.0.1:8000/" and visit this web page. The page with a graph of oil prices and a bar of oil news will be displayed.
-3. You can scroll down the Product selection list to choose a kind of oil product, fill in the form with your desired start time and end start for searching. Then click "Submit" to retrieve price data and news data. The price graph and news of your desired product will be presented. You do not to input a value in every form, as a default value will be displayed.
+2. Click on "http://127.0.0.1:8000/" and visit this web page. The page with a graph of oil prices and oil news will be displayed.
+3. You can scroll down the Product selection list to choose a kind of oil product, fill in the form with your desired start time and end start for searching. Then click "Submit" to retrieve price data and news data. The price graph and news of your desired product will be presented. You do not need to input a value in every form, as a default value will be displayed.
 
 ### **Steps**
 1. Visit "http://127.0.0.1:8000/". You will see the home page.
@@ -244,3 +244,4 @@ Also, the data processing part is immature. In future, I will focus more on how 
 ## Final Reflection
 Write at least a paragraph about your experience in this course. What did you learn? What do you need to do to learn more? Key takeaways? etc.
 
+It is a wonderful journey for me to realise the fun fact that I can build my apps even with fairly basic coding skills. Besides acquiring sophisticated programming techniques, decoupling and self-learning shine when building a project. During this course, I learned how to start by using small blocks to achieve ultimate targets. What’s more, I self-learned how to fetch data from API, how to draw a graph, how to construct a web page, etc. The key takeaway from this course is learning based on interesting projects is way faster and more efficient than learning from books.
