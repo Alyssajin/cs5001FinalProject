@@ -235,5 +235,9 @@ How did you test your code? What did you do to make sure your code was correct? 
 ## Missing Features / What's Next
 Focus on what you didn't get to do, and what you would do if you had more time, or things you would implement in the future. 
 
+The NEWS API website only shares the latest news. For historical information, it requires a paid subscription. In fact, numerous companies do the same thing. Some even refuse to provide 2-year-old oil news for paid users, such as Bloomberg. Thus, I will make an app to automatically store oil news and build a personalised news library. 
+
+Also, the data processing part is immature. In future, I will focus more on how to process data to assist analysis.
+
 ## Final Reflection
 Write at least a paragraph about your experience in this course. What did you learn? What do you need to do to learn more? Key takeaways? etc.
