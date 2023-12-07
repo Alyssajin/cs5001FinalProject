@@ -1,0 +1,49 @@
+{
+  "response": {
+    "total": 1,
+    "dateFormat": "YYYY-MM-DD",
+    "frequency": "daily",
+    "data": [
+      {
+        "period": "2001-01-03",
+        "duoarea": "Y44MB",
+        "area-name": "NA",
+        "product": "EPLLPA",
+        "product-name": "Propane",
+        "process": "PF4",
+        "process-name": "Spot Price FOB",
+        "series": "EER_EPLLPA_PF4_Y44MB_DPG",
+        "series-description": "Mont Belvieu, TX Propane Spot Price FOB (Dollars per Gallon)",
+        "value": 0.78,
+        "units": "$/GAL"
+      }
+    ]
+  },
+  "request": {
+    "command": "/v2/petroleum/pri/spt/data/",
+    "params": {
+      "api_key": "215LPlEH4HEH9iCacvem0zZlJytc6I6N34HkAVEM",
+      "frequency": "daily",
+      "data": [
+        "value"
+      ],
+      "facets": {
+        "product": [
+          "EPLLPA"
+        ]
+      },
+      "start": "2001-01-03",
+      "end": "2001-01-03",
+      "sort": [
+        {
+          "column": "period",
+          "direction": "desc"
+        }
+      ],
+      "offset": 0,
+      "length": 5000
+    }
+  },
+  "apiVersion": "2.1.5",
+  "ExcelAddInVersion": "2.1.0"
+}
