@@ -39,7 +39,7 @@ Highlight some key features of this project that you want to show off/talk about
 - Use html language to stylish a simple page, including a bar, a selection list, a button and input areas.
 
 ### **Key files**
-- [data.py]([data.py](django_project%2Foil%2Fdata.py)data.py): fetch and parse data.
+- [data.py](django_project/oil/data.py): fetch and parse data.
 - views.py: assemble processed data for home.html
 - home.html: display features on the home page.
 - test_data.py: test data.py
