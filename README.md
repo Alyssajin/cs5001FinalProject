@@ -80,7 +80,7 @@ If we wanted to run this project locally, what would we need to do?  If we need 
 ## Code Review
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did.
 
-### **‘fetch_form_value’**:
+### **‘[fetch_form_value](fetch_api_data)’**:
 _To read and store value from user. From views.py_
 
 ```python
