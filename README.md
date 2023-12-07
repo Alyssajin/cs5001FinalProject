@@ -33,9 +33,18 @@ News pushes prices to fluctuate. Reviewing historical information and prices is 
 ## Key Features
 Highlight some key features of this project that you want to show off/talk about/focus on. 
 
+### **Key Features**
 - Allow interactions with users: Different data will be returned according to users' inputs.  
 - Extract and parse data from API websites.
 - Use html language to stylish a simple page, including a bar, a selection list, a button and input areas.
+
+### **Key files**
+- [data.py]([data.py](django_project%2Foil%2Fdata.py)data.py): fetch and parse data.
+- views.py: assemble processed data for home.html
+- home.html: display features on the home page.
+- test_data.py: test data.py
+- test_graph_actual.png & test_graph_expected.png: test the draw_graph function.
+- oil_data.json & news_data.json: fake data for test_data.py
 
 
 ## Guide
@@ -72,9 +81,7 @@ If we wanted to run this project locally, what would we need to do?  If we need 
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did.
 
 ### **‘fetch_form_value’**:
-_To read and store value from user._
-
-https://github.com/Alyssajin/cs5001FinalProject/blob/6b671987b5882364ed6245dbd2da3f925948a109/django_project/oil/views.py#L22
+_To read and store value from user. From views.py_
 
 ```python
 def fetch_form_value() -> tuple:
@@ -91,7 +98,7 @@ def fetch_form_value() -> tuple:
 ‘starting_date’ and ‘ending_date’ are values from the form, while ‘product_name’ is the value from the scroll-down selection list. I employ ‘request.POST.get()’ to extract users' input values.
 
 ### **'process_news'** :
-_Store titles, articles, dates and urls of news._
+_Store titles, articles, dates and urls of news. From data.py_
 
 ```python
 def process_news(data: dict) -> tuple or str:
@@ -133,7 +140,7 @@ def process_news(data: dict) -> tuple or str:
 I use a For loop to go through the first 3 news data. In the loop, I extract different values into four lists. Try Except function is implemented to detect an IndexError(if the number of news is 0 or fewer than 3). The processed data will be returned as a tuple.
 
 ### **'draw_graph'**:
-_Display data in a graph_
+_Display data in a graph. From data.py_
 
 ```python
 def draw_graph(data: dict, product_name: str = 'Brent'):
