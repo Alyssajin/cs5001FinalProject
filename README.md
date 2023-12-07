@@ -80,8 +80,8 @@ If we wanted to run this project locally, what would we need to do?  If we need 
 ## Code Review
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did.
 
-### **‘[fetch_form_value](fetch_api_data)’**:
-_To read and store value from user. From views.py_
+### **‘[fetch_form_value](django_project/oil/views.py)’**:
+_To read and store value from users. From views.py_
 
 ```python
 def fetch_form_value() -> tuple:
@@ -97,7 +97,7 @@ def fetch_form_value() -> tuple:
 ```
 ‘starting_date’ and ‘ending_date’ are values from the form, while ‘product_name’ is the value from the scroll-down selection list. I employ ‘request.POST.get()’ to extract users' input values.
 
-### **'process_news'** :
+### **'[process_news](django_project/oil/data.py)'** :
 _Store titles, articles, dates and urls of news. From data.py_
 
 ```python
@@ -139,7 +139,7 @@ def process_news(data: dict) -> tuple or str:
 ```
 I use a For loop to go through the first 3 news data. In the loop, I extract different values into four lists. Try Except function is implemented to detect an IndexError(if the number of news is 0 or fewer than 3). The processed data will be returned as a tuple.
 
-### **'draw_graph'**:
+### **'[draw_graph](django_project/oil/data.py)'**:
 _Display data in a graph. From data.py_
 
 ```python
