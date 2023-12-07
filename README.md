@@ -139,7 +139,7 @@ def process_news(data: dict) -> tuple or str:
 ```
 I use a For loop to go through the first 3 news data. In the loop, I extract different values into four lists. Try Except function is implemented to detect an IndexError(if the number of news is 0 or fewer than 3). The processed data will be returned as a tuple.
 
-### **'[draw_graph](django_project/oil/data.py)'**:
+### **'[draw_graph](def draw_graph(data: dict, product_name: str = 'Brent'):)'**:
 _Display data in a graph. From data.py_
 
 ```python
