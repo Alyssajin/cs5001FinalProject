@@ -39,12 +39,12 @@ Highlight some key features of this project that you want to show off/talk about
 - Use html language to stylish a simple page, including a bar, a selection list, a button and input areas.
 
 ### **Key files**
-- [data.py]([data.py](django_project%2Foil%2Fdata.py)data.py): fetch and parse data.
-- views.py: assemble processed data for home.html
-- home.html: display features on the home page.
-- test_data.py: test data.py
-- test_graph_actual.png & test_graph_expected.png: test the draw_graph function.
-- oil_data.json & news_data.json: fake data for test_data.py
+- [data.py](django_project/oil/data.py): fetch and parse data.
+- [views.py](django_project/oil/views.py): assemble processed data for home.html
+- [home.html](django_project/oil/templates/oil/home.html): display features on the home page.
+- [test_data.py](django_project/test_data.py): test data.py
+- [test_graph_actual.png](django_project/test_graph_actual.png) & [test_graph_expected.png](django_project/test_graph_expected.png): test the draw_graph function.
+- [oil_data.json](django_project/oil_data.json) & [news_data.json](django_project/news_data.json): fake data for test_data.py
 
 
 ## Guide
@@ -80,8 +80,8 @@ If we wanted to run this project locally, what would we need to do?  If we need 
 ## Code Review
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did.
 
-### **‘[fetch_form_value](django_project/oil/data.py#L25)’**:
-_To read and store value from user. From views.py_
+### **‘[fetch_form_value](django_project/oil/views.py#L22)’**:
+_To read and store value from users. From views.py_
 
 ```python
 def fetch_form_value() -> tuple:
@@ -226,8 +226,8 @@ Explain how you documented running the project, and what we need to look for in 
 ## Testing
 How did you test your code? What did you do to make sure your code was correct? If you wrote unit tests, you can link to them here. If you did run tests, make sure you document them as text files, and include them in your submission. 
 
-- All functions except the draw_graph functions haven been tested by test_data.py.  [django_project/test_data.py](django_project/test_data.py)
-- draw_graph functions has been tested by comparing the actual data graph with the expected data graph.
+- All functions except the draw_graph functions haven been tested by [test_data.py](django_project/test_data.py).
+- The draw_graph function has been tested by comparing the actual data graph with the expected data graph.
 ![test_graph_actual.png](django_project%2Ftest_graph_actual.png)
 ![test_graph_expected.png](django_project%2Ftest_graph_expected.png)
 
