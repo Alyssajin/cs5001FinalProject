@@ -97,7 +97,7 @@ def fetch_form_value() -> tuple:
 ```
 ‘starting_date’ and ‘ending_date’ are values from the form, while ‘product_name’ is the value from the scroll-down selection list. I employ ‘request.POST.get()’ to extract users' input values.
 
-### **'process_news'** :
+### **'[process_news](django_project/oil/data.py#L253)'** :
 _Store titles, articles, dates and urls of news. From data.py_
 
 ```python
@@ -139,7 +139,7 @@ def process_news(data: dict) -> tuple or str:
 ```
 I use a For loop to go through the first 3 news data. In the loop, I extract different values into four lists. Try Except function is implemented to detect an IndexError(if the number of news is 0 or fewer than 3). The processed data will be returned as a tuple.
 
-### **'draw_graph'**:
+### **'[draw_graph](django_project/oil/data.py#L185)'**:
 _Display data in a graph. From data.py_
 
 ```python
