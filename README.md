@@ -80,7 +80,7 @@ If we wanted to run this project locally, what would we need to do?  If we need 
 ## Code Review
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did.
 
-### **‘[fetch_form_value](django_project/oil/views.py)’**:
+### **‘[fetch_form_value](django_project/oil/views.py#L22)’**:
 _To read and store value from users. From views.py_
 
 ```python
@@ -97,7 +97,7 @@ def fetch_form_value() -> tuple:
 ```
 ‘starting_date’ and ‘ending_date’ are values from the form, while ‘product_name’ is the value from the scroll-down selection list. I employ ‘request.POST.get()’ to extract users' input values.
 
-### **'[process_news](django_project/oil/data.py)'** :
+### **'[process_news](django_project/oil/data.py#L253)'** :
 _Store titles, articles, dates and urls of news. From data.py_
 
 ```python
